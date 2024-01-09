@@ -1,0 +1,9 @@
+.welcome_body{
+    margin-top: 100px;
+}
+
+.welcome_body h1{
+    color: #5e534e;
+    padding-left: 2vw;
+    font-size: 30px;
+}

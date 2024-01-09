@@ -1,0 +1,87 @@
+.navbar_view {
+    background-color: #cdc6c3;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    position: fixed !important;
+    justify-content: center;
+}
+
+.burguer_menu {
+    color: #695d57;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+
+.burguer_menu:hover {
+    transform: scale(1.2);
+    font-size: 40px;
+    transition: .8s ease-in-out;
+}
+
+.x_menu {
+    color: #85766e;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+
+.x_menu:hover{
+    color: #9e6c52;
+    transform: scale(1.2);
+    transition: .8s ease-in-out;
+}
+
+.menu_title {
+    color: #5e534e;
+    cursor: pointer;
+    cursor: default;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: #d4b2a7;
+}
+
+.offcanvas {
+    background-color: #e7d7c9 !important;
+    align-items: flex-start !important;
+    width: 300px !important;
+    border-radius: 20px !important;
+}
+
+
+.offcanvas-header{
+    width: 100%;
+}
+
+.menu_item_nav {
+    font-size: 1.2em;
+    color: #5e534e;
+    display: flex;
+    transition: 0.5s;
+    text-decoration: none;
+    padding-top: 20px;
+    font-weight: 500;
+    padding-right: 20px;
+    justify-content: flex-start ;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: #443d39;
+    opacity: 0.75;
+    transition: 0.7s ease-in-out;
+}
+
+.menu_link:hover {
+    opacity: 1;
+    color: #2c2826;
+    transition: 0.7s ease-in-out;
+}
+
+.button {
+    max-width: 20vw;
+    max-height: 30vh;
+}
