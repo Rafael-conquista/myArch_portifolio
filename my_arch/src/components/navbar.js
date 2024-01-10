@@ -1,6 +1,7 @@
 import React from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../images/logo.jpeg'
+import perfil from '../images/perfil.jpeg'
 import { useState } from 'react';
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdDownload } from "react-icons/io";
@@ -48,9 +49,9 @@ function Navbar() {
                     </ul>
                     <Row className='navbar_description'>
                         <Col className='col-3'>
-                            <CgProfile />
+                            <img src={perfil} alt='vazio' className='perfil' />
                         </Col>
-                        <Col>
+                        <Col className='navbar_text'>
                             <span>
                                 Olá, eu me chamo Mylena
                                 Dorna Cargerani!
@@ -64,9 +65,9 @@ function Navbar() {
                     </ul>
                     <Row className='navbar_description'>
                         <Col className='col-3'>
-                            <GiFamilyHouse />
+                            <GiFamilyHouse className='navbar_icon'/>
                         </Col>
-                        <Col>
+                        <Col className='navbar_text'>
                             <span>
                                 Venha ver mais projetos!
                             </span>
@@ -77,9 +78,9 @@ function Navbar() {
                     </ul>
                     <Row className='navbar_description'>
                         <Col className='col-3'>
-                            <IoNewspaperSharp />
+                            <IoNewspaperSharp className='navbar_icon'/>
                         </Col>
-                        <Col>
+                        <Col className='navbar_text'>
                             <span>
                                 Baixe meu currículo!
                             </span>

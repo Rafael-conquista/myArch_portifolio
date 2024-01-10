@@ -1,9 +1,7 @@
 import React from "react";
 import './footer.css'
-import { Link } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { FaPhoneSquareAlt } from "react-icons/fa";
 
 import {
     SiGmail
@@ -13,17 +11,36 @@ function Footer() {
         <>
             <div className="body">
                 <footer className="footer">
-                    <ul className="social_icons">
-                        <li className="social_list"><a href="https://www.linkedin.com/in/rafael-conquista/" className="link" target="blank"><FaLinkedin /></a></li>
-                        <li className="social_list"><a href="https://github.com/Rafael-conquista" className="link" target="blank"><RiInstagramFill/></a></li>
-                        <li className="social_list"><a href="mailto:https://criarmeulink.com.br/u/1703287673" className="link" target="blank"><SiGmail /></a></li>
-                        <li className="social_list"><a href="mailto:https://criarmeulink.com.br/u/1703287673" className="link" target="blank"><FaPhoneSquareAlt /></a></li>
-                    </ul>
-                    <ul className="menu" id="footer">
-                        <li className="menu_item"><a href="#" className="link">Sobre mim</a></li>
-                        <li className="menu_item"><a href="#" className="link">Meus Projetos</a></li>
-                        <li className="menu_item"><a href="#" className="link">Voltar ao topo</a></li>
-                    </ul>
+                    <h1>Contato</h1>
+                    <span>
+                        Sinta-se à vontade para entrar em contato comigo pelo Instagram ou através
+                        do meu e-mail. Além disso, convido você a explorar minhas redes sociais
+                        para acompanhar as últimas atualizações e informações exclusivas. Estou
+                        ansiosa para receber sua mensagem!
+                    </span>
+                    <div className="icons_grid">
+                        <div className="icons_content">
+                            <a href="mailto:https://criarmeulink.com.br/u/1703287673" className="link" target="blank"><SiGmail /></a>
+                            <span className="icon_title">Email</span>
+                            <div>
+                                <p className="icon_text">arq.mylenacargerani@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className="icons_content">
+                            <a href="https://github.com/Rafael-conquista" className="link" target="blank"><RiInstagramFill/></a>
+                            <span className="icon_title">Instagram</span>
+                            <div>
+                                <p className="icon_text">@arq.mylenacargerani</p>
+                            </div>
+                        </div>
+                        <div className="icons_content">
+                            <a href="https://www.linkedin.com/in/rafael-conquista/" className="link" target="blank"><FaLinkedin /></a>
+                            <span className="icon_title">linkedIn</span>
+                            <div>
+                                <p className="icon_text">https://www.linkedin.com/in/mylenacargerani/</p>
+                            </div>
+                        </div>
+                    </div>
                 </footer>
             </div>
         </>
