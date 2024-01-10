@@ -46,8 +46,6 @@
 
 .offcanvas {
     background-color: #e7d7c9 !important;
-    align-items: flex-start !important;
-    width: 300px !important;
     border-radius: 20px !important;
 }
 
@@ -65,7 +63,7 @@
     padding-top: 20px;
     font-weight: 500;
     padding-right: 20px;
-    justify-content: flex-start ;
+    justify-content: center ;
 }
 
 .menu_link {
@@ -73,6 +71,25 @@
     color: #443d39;
     opacity: 0.75;
     transition: 0.7s ease-in-out;
+}
+
+.link_text {
+    text-decoration: none;
+    color: #443d39;
+    opacity: 0.75;
+    transition: 0.7s ease-in-out;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.link_text:hover {
+    opacity: 1;
+    color: #2c2826;
+    transition: 0.7s ease-in-out;
+}
+
+.navbar_description span{
+    font-size: 20px;
 }
 
 .menu_link:hover {
@@ -84,4 +101,15 @@
 .button {
     max-width: 20vw;
     max-height: 30vh;
+}
+
+.logo{
+    max-height: 70px;
+}
+
+.navbar_description{
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
 }

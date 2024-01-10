@@ -1,10 +1,15 @@
 import React from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import logo from '../images/logo.jpeg'
 import { useState } from 'react';
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdDownload } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
+import { GiFamilyHouse } from "react-icons/gi";
+import { IoNewspaperSharp } from "react-icons/io5";
 import './navbar.css'
+import { Row, Col } from 'react-bootstrap';
 //import curriculo_rafael_conquista from '../img/curriculo.pdf';
 
 function Navbar() {
@@ -23,14 +28,14 @@ function Navbar() {
         document.body.removeChild(link);
     };
     */
-   //adicionar o onclick de download dps
+    //adicionar o onclick de download dps
 
     return (
         <div>
             <nav className="navbar navbar-light shadow navbar_view">
                 <div className="container-fluid">
-                    <h2>logo</h2>
-                    <h1 className="menu_title" href="#"><a href="#" className="menu_link">Mylena Cargerani</a></h1>
+                    <img src={logo} alt='vazio' className='logo' />
+                    <h1 className="menu_title" href="#"><a href="#" className="menu_link">MYARCH</a></h1>
                     <CgMenuRight className='burguer_menu' onClick={handleShow} />
                 </div>
                 <Offcanvas show={show} placement='end' onHide={handleClose} className="offcanvas">
@@ -39,12 +44,49 @@ function Navbar() {
                         <IoIosClose className='x_menu' onClick={handleClose} />
                     </Offcanvas.Header>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="menu_link"> Início</a></li>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="menu_link">Sobre mim</a></li>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="menu_link">Habilidades</a></li>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="menu_link">Projetos</a></li>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="menu_link">Entrar em contato</a></li>
-                        <li className="menu_item_nav"><a className="menu_link">Baixar meu currículo <IoMdDownload /></a></li>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="link_text">Sobre mim</a></li>
+                    </ul>
+                    <Row className='navbar_description'>
+                        <Col className='col-3'>
+                            <CgProfile />
+                        </Col>
+                        <Col>
+                            <span>
+                                Olá, eu me chamo Mylena
+                                Dorna Cargerani!
+                                Vem saber mais sobre
+                                mim!
+                            </span>
+                        </Col>
+                    </Row>
+                    <ul>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="link_text">Projetos</a></li>
+                    </ul>
+                    <Row className='navbar_description'>
+                        <Col className='col-3'>
+                            <GiFamilyHouse />
+                        </Col>
+                        <Col>
+                            <span>
+                                Venha ver mais projetos!
+                            </span>
+                        </Col>
+                    </Row>
+                    <ul>
+                        <li className="menu_item_nav"><a className="link_text">Currículo <IoMdDownload /></a></li>
+                    </ul>
+                    <Row className='navbar_description'>
+                        <Col className='col-3'>
+                            <IoNewspaperSharp />
+                        </Col>
+                        <Col>
+                            <span>
+                                Baixe meu currículo!
+                            </span>
+                        </Col>
+                    </Row>
+                    <ul>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="link_text">Entre em contato</a></li>
                     </ul>
                 </Offcanvas>
             </nav>
