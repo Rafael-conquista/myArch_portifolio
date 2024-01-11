@@ -4,14 +4,12 @@ import logo from '../images/logo.jpeg'
 import perfil from '../images/perfil.jpeg'
 import { useState } from 'react';
 import { CgMenuRight } from "react-icons/cg";
-import { IoMdDownload } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
 import { GiFamilyHouse } from "react-icons/gi";
 import { IoNewspaperSharp } from "react-icons/io5";
 import './navbar.css'
 import { Row, Col } from 'react-bootstrap';
-//import curriculo_rafael_conquista from '../img/curriculo.pdf';
+import DownloadCurriculo from "../utils/download_curriculo";
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -19,23 +17,13 @@ function Navbar() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    /*
-    const iniciarDownload = () => {
-        const link = document.createElement('a');
-        link.href = curriculo_rafael_conquista;
-        link.setAttribute('download', ''); // Isso força o download ao invés de abrir o arquivo no navegador
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-    */
-    //adicionar o onclick de download dps
-
     return (
         <div>
             <nav className="navbar navbar-light shadow navbar_view">
                 <div className="container-fluid">
-                    <img src={logo} alt='vazio' className='logo' />
+                    <a href="#" className="menu_link">
+                        <img src={logo} alt='vazio' className='logo' href="#"/>
+                    </a>
                     <h1 className="menu_title" href="#"><a href="#" className="menu_link">MYARCH</a></h1>
                     <CgMenuRight className='burguer_menu' onClick={handleShow} />
                 </div>
@@ -74,9 +62,9 @@ function Navbar() {
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav"><a className="link_text">Currículo </a></li>
+                        <li className="menu_item_nav" onClick={DownloadCurriculo}><a className="link_text">Currículo </a></li>
                     </ul>
-                    <Row className='navbar_description'>
+                    <Row className='navbar_description' onClick={DownloadCurriculo}>
                         <Col className='col-3'>
                             <IoNewspaperSharp className='navbar_icon'/>
                         </Col>

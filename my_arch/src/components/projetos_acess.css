@@ -1,0 +1,53 @@
+.project_button_menu{
+    text-align: center;
+    background-color: #e7d7c9;
+    width: 80vw;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #443d39;
+    user-select: none;
+}
+
+.projects_menu_body{
+    padding-top: 50px;
+}
+
+.projects_grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr);
+    padding-top: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.projects_button{
+    background-color: #cdc6c3;
+    border-radius: 70px;
+    height: 5vh;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects_button:hover{
+    background-color: #d4b2a7;
+    transition: 1s;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+@media screen and (min-width:500px) {
+    .projects_grid {
+      flex-direction: column;
+      grid-template-columns: repeat(4, 2fr);
+    }
+  }

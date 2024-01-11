@@ -1,0 +1,11 @@
+.download:hover{
+    background-color: aqua;
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    background-color: #d8c4b4d0;
+}
+
+.download{
+    transition: 0.5s;
+}
