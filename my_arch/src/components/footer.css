@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    width: 100%;
+    width: 95vw;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -9,6 +9,9 @@
     flex-direction: column;
     background: #cdc6c3;
     z-index: 100;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 2vh;
 }
 
 .footer span{

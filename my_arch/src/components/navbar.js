@@ -74,7 +74,7 @@ function Navbar() {
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav"><a className="link_text">Currículo <IoMdDownload /></a></li>
+                        <li className="menu_item_nav"><a className="link_text">Currículo </a></li>
                     </ul>
                     <Row className='navbar_description'>
                         <Col className='col-3'>
