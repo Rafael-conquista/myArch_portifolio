@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../images/logo.jpeg'
 import perfil from '../images/perfil.jpeg'
@@ -13,6 +14,11 @@ import DownloadCurriculo from "../utils/download_curriculo";
 
 function Navbar() {
     const [show, setShow] = useState(false);
+
+    const actionsDownload = () =>{
+        DownloadCurriculo()
+        handleClose()
+    }
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -33,38 +39,46 @@ function Navbar() {
                         <IoIosClose className='x_menu' onClick={handleClose} />
                     </Offcanvas.Header>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="link_text">Sobre mim</a></li>
-                    </ul>
-                    <Row className='navbar_description'>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="#sobre" className="link_text">Sobre mim</a></li>
+                    </ul>   
+                    <Row className='navbar_description' onClick={handleClose}>
                         <Col className='col-3'>
-                            <img src={perfil} alt='vazio' className='perfil' />
+                            <a href="#sobre">
+                                <img src={perfil} alt='vazio' className='perfil' />
+                            </a>
                         </Col>
                         <Col className='navbar_text'>
-                            <span>
-                                Olá, eu me chamo Mylena
-                                Dorna Cargerani!
-                                Vem saber mais sobre
-                                mim!
-                            </span>
+                            <a href="#sobre">
+                                <span>
+                                    Olá, eu me chamo Mylena
+                                    Dorna Cargerani!
+                                    Vem saber mais sobre
+                                    mim!
+                                </span>
+                            </a>
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="link_text">Projetos</a></li>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="#projeto" className="link_text">Projetos</a></li>
                     </ul>
-                    <Row className='navbar_description'>
+                    <Row className='navbar_description' onClick={handleClose}>
                         <Col className='col-3'>
-                            <GiFamilyHouse className='navbar_icon'/>
+                            <a href="#projeto">
+                                <GiFamilyHouse className='navbar_icon'/>
+                            </a>
                         </Col>
                         <Col className='navbar_text'>
-                            <span>
-                                Venha ver mais projetos!
-                            </span>
+                            <a href="#projeto">
+                                <span>
+                                    Venha ver mais projetos!
+                                </span>
+                            </a>
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav" onClick={DownloadCurriculo}><a className="link_text">Currículo </a></li>
+                        <li className="menu_item_nav" onClick={actionsDownload}><a className="link_text">Currículo </a></li>
                     </ul>
-                    <Row className='navbar_description' onClick={DownloadCurriculo}>
+                    <Row className='navbar_description' onClick={actionsDownload}>
                         <Col className='col-3'>
                             <IoNewspaperSharp className='navbar_icon'/>
                         </Col>
@@ -75,7 +89,7 @@ function Navbar() {
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#" className="link_text">Entre em contato</a></li>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="#contato" className="link_text">Entre em contato</a></li>
                     </ul>
                 </Offcanvas>
             </nav>

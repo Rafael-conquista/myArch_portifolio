@@ -12,6 +12,11 @@
     border-radius: 20px;
     margin: 0 auto;
     margin-bottom: 2vh;
+    margin-top: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
 }
 
 .footer span{

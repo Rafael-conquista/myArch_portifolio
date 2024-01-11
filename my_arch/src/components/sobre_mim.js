@@ -3,7 +3,7 @@ import './sobre_mim.css'
 
 function AboutMe(){
     return(
-        <div className="projects_menu_body">
+        <div className="projects_menu_body" id="sobre">
             <div className="project_button_menu">SOBRE MIM</div>
             <div className='teste'>
             <h3 className='about_title'>Olá, eu sou a Mylena Dorna Cargerani!</h3>

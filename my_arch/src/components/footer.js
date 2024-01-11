@@ -9,7 +9,7 @@ import {
 function Footer() {
     return (
         <>
-            <div className="body">
+            <div className="body" id="contato">
                 <footer className="footer">
                     <h1>Contato</h1>
                     <span>
@@ -20,25 +20,32 @@ function Footer() {
                     </span>
                     <div className="icons_grid">
                         <div className="icons_content">
-                            <a href="mailto:https://criarmeulink.com.br/u/1703287673" className="link" target="blank"><SiGmail /></a>
-                            <span className="icon_title">Email</span>
-                            <div>
-                                <p className="icon_text">arq.mylenacargerani@gmail.com</p>
-                            </div>
+                            <a href="mailto:" className="link" target="blank"><SiGmail /></a>
+                            <a href="mailto:arq.mylenacargerani@gmail.com" target="blank">
+                                <span className="icon_title">Email</span>
+                                <div>
+                                    <p className="icon_text">arq.mylenacargerani@gmail.com</p>
+                                </div>
+                            </a>
                         </div>
                         <div className="icons_content">
-                            <a href="https://github.com/Rafael-conquista" className="link" target="blank"><RiInstagramFill/></a>
-                            <span className="icon_title">Instagram</span>
-                            <div>
-                                <p className="icon_text">@arq.mylenacargerani</p>
-                            </div>
+                            <a href="https://www.instagram.com/arq.mylenacargerani/" className="link" target="blank"><RiInstagramFill/></a>
+                            <a href="https://www.instagram.com/arq.mylenacargerani/" target="blank">
+                                <span className="icon_title">Instagram</span>
+                                <div>
+                                    <p className="icon_text">@arq.mylenacargerani</p>
+                                </div>
+                            </a>
                         </div>
                         <div className="icons_content">
-                            <a href="https://www.linkedin.com/in/rafael-conquista/" className="link" target="blank"><FaLinkedin /></a>
-                            <span className="icon_title">linkedIn</span>
-                            <div>
-                                <p className="icon_text">https://www.linkedin.com/in/mylenacargerani/</p>
-                            </div>
+                            <a href="https://www.linkedin.com/in/mylenacargerani/" className="link" target="blank"><FaLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/mylenacargerani/" target="blank">
+                                <span className="icon_title">linkedIn</span>
+                                <div>
+                                    <p className="icon_text">https://www.linkedin.com/in/mylenacargerani/</p>
+                                </div>
+                            </a>
+                            
                         </div>
                     </div>
                 </footer>

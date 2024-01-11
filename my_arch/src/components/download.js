@@ -6,7 +6,7 @@ function Download(){
     return(
         <div>
             <div className="project_button_menu download" onClick={DownloadCurriculo}>
-                download  <IoMdDownload/>
+                CURRÍCULO   <IoMdDownload/>
             </div>
         </div>
     )

@@ -14,3 +14,15 @@
   cursor: pointer;
   height: 2px;
 }
+
+#sobre{
+  scroll-margin-top: 50px;
+}
+
+#projeto{
+  scroll-margin-top: 40px;
+}
+
+body{
+  background: linear-gradient(180deg, #ede9e3 60%, #e7d7c9 100%);
+}

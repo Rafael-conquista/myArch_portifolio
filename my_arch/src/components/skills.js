@@ -3,7 +3,7 @@ function Skills() {
     return(
         <div>
             <div className="project_button_menu">
-                habilidades
+                HABILIDADES
             </div>
             <div>
                 Adicionar habilidade depois

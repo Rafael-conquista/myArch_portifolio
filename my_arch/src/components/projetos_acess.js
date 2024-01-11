@@ -14,7 +14,7 @@ function ProjetoAcess() {
     }
 
     return (
-        <div className='projects_menu_body'>
+        <div className='projects_menu_body' id='projeto'>
             <div className="project_button_menu">PROJETOS</div>
                 <div className='projects_grid'>
                     {
