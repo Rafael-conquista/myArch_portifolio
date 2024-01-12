@@ -1,23 +1,16 @@
 import './App.css';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
-import Slider from './components/slider';
-import ProjetoAcess from './components/projetos_acess';
-import AboutMe from './components/sobre_mim';
-import Skills from './components/skills';
-import Download from './components/download';
+import Home from './pages/home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Directory from './pages/projects_directory';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Slider/>
-      <ProjetoAcess/>
-      <AboutMe/>
-      <Skills/>
-      <Download/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:comodo" element={<Directory />} />
+      </Routes>
+    </Router>
   );
 }
 
