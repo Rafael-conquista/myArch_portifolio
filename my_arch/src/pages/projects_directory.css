@@ -1,0 +1,68 @@
+.directory_title{
+    padding-top: 125px;
+    padding-left: 30px;
+    background: linear-gradient(180deg, #e7d7c9 60%, #ede9e3 100%);
+}
+
+.directory_grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 0.5fr);
+    padding-top: 50px;
+    padding-left: 5vw;
+    position: relative;
+}
+
+.imagem_setup {
+    max-width:700px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.projects_card {
+    border-radius: 10px;
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    /* Se desejar alinhar na vertical */
+    justify-content: center;
+    /* Alinha verticalmente */
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width:500px) {
+    .projects_card {
+      width: 70vw;
+    }
+  }
+  
+  .projects_card:hover {
+    transform: scale(1.03);
+    background-color: #e7d7c9;
+    opacity: 1;
+    z-index: 100;
+    transition: .8s;
+  }
+
+  .projects_card:hover .imagem{
+    height: 20vh;
+    transition: 1s ease-in-out;
+  }
+  
+  .imagem {
+    height: 20vh;
+    width: 100%;
+    margin: 20px;
+    margin-top: 0;
+    height: 100vh;
+    display: block;
+  }
+

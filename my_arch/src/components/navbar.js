@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../images/logo.jpeg'
 import perfil from '../images/perfil.jpeg'
@@ -27,10 +26,10 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-light shadow navbar_view">
                 <div className="container-fluid">
-                    <a href="#" className="menu_link">
-                        <img src={logo} alt='vazio' className='logo' href="#"/>
+                    <a href="/#" className="menu_link">
+                        <img src={logo} alt='vazio' className='logo' href="/#"/>
                     </a>
-                    <h1 className="menu_title" href="#"><a href="#" className="menu_link">MYARCH</a></h1>
+                    <h1 className="menu_title" href="/#"><a href="/#" className="menu_link">MYARCH</a></h1>
                     <CgMenuRight className='burguer_menu' onClick={handleShow} />
                 </div>
                 <Offcanvas show={show} placement='end' onHide={handleClose} className="offcanvas">
@@ -39,16 +38,16 @@ function Navbar() {
                         <IoIosClose className='x_menu' onClick={handleClose} />
                     </Offcanvas.Header>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#sobre" className="link_text">Sobre mim</a></li>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="/#sobre" className="link_text">Sobre mim</a></li>
                     </ul>   
                     <Row className='navbar_description' onClick={handleClose}>
                         <Col className='col-3'>
-                            <a href="#sobre">
+                            <a href="/#sobre">
                                 <img src={perfil} alt='vazio' className='perfil' />
                             </a>
                         </Col>
                         <Col className='navbar_text'>
-                            <a href="#sobre">
+                            <a href="/#sobre">
                                 <span>
                                     Olá, eu me chamo Mylena
                                     Dorna Cargerani!
@@ -59,16 +58,16 @@ function Navbar() {
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#projeto" className="link_text">Projetos</a></li>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="/#projeto" className="link_text">Projetos</a></li>
                     </ul>
                     <Row className='navbar_description' onClick={handleClose}>
                         <Col className='col-3'>
-                            <a href="#projeto">
+                            <a href="/#projeto">
                                 <GiFamilyHouse className='navbar_icon'/>
                             </a>
                         </Col>
                         <Col className='navbar_text'>
-                            <a href="#projeto">
+                            <a href="/#projeto">
                                 <span>
                                     Venha ver mais projetos!
                                 </span>
@@ -89,7 +88,7 @@ function Navbar() {
                         </Col>
                     </Row>
                     <ul>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#contato" className="link_text">Entre em contato</a></li>
+                        <li className="menu_item_nav" onClick={handleClose}><a href="/#contato" className="link_text">Entre em contato</a></li>
                     </ul>
                 </Offcanvas>
             </nav>

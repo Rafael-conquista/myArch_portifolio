@@ -1,7 +1,7 @@
 .navbar_view {
     background-color: #cdc6c3;
     top: 0;
-    z-index: 100;
+    z-index: 500;
     width: 100%;
     position: fixed !important;
     justify-content: center;
