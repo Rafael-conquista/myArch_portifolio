@@ -38,6 +38,7 @@
     padding-left: 5vw;
     position: relative;
     flex-direction: row;
+    padding-right: 5vw;
 }
 
 @media screen and (max-width:1300px) {
