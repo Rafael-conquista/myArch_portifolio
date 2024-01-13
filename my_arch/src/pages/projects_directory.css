@@ -4,25 +4,16 @@
     background: linear-gradient(180deg, #e7d7c9 60%, #ede9e3 100%);
 }
 
-.directory_grid{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 0.5fr);
-    padding-top: 50px;
-    padding-left: 5vw;
-    position: relative;
-}
-
 .imagem_setup {
-    max-width:700px;
-    max-height:300px;
+    max-width:750px;
+    max-height:600px;
     width: auto;
     height: auto;
 }
 
 .projects_card {
     border-radius: 10px;
-    width: 25vw;
+    width: 30vw;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -36,13 +27,78 @@
     position: relative;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.8);
     margin-bottom: 20px;
+    background-color: #e7d7c9;
   }
-  
-  @media screen and (max-width:500px) {
-    .projects_card {
-      width: 70vw;
-    }
+
+.directory_grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 0.5fr);
+    padding-top: 50px;
+    padding-left: 5vw;
+    position: relative;
+    flex-direction: row;
+}
+
+@media screen and (max-width:1300px) {
+  .projects_card {
+    width: 40vw;
   }
+  .directory_grid {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .projects_card {
+    width: 75vw;
+    margin: 0 auto;
+  }
+  .directory_grid {
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imagem_setup {
+    max-width:750px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+}
+
+@media screen and (max-width:700px) {
+  .projects_card {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .directory_grid {
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imagem_setup {
+    max-width:750px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}
+}
+
+@media screen and (max-width:500px) {
+  .projects_card {
+    width: 90vw;
+  }
+  .directory_grid {
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imagem_setup {
+    max-width:750px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}
+}
   
   .projects_card:hover {
     transform: scale(1.03);
@@ -58,11 +114,12 @@
   }
   
   .imagem {
-    height: 20vh;
+    height: 100%;
     width: 100%;
     margin: 20px;
     margin-top: 0;
     height: 100vh;
     display: block;
+    transition: 1s ease-in-out;
   }
 

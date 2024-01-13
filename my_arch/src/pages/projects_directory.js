@@ -10,7 +10,7 @@ function Directory (){
         'Projeto1': imagemTeste, 'Projeto2': imagemTeste, 'Projeto3': imagemTeste, 'Projeto4': imagemTeste, 'Projeto5': imagemTeste, 'Projeto6': imagemTeste, 'Projeto7': imagemTeste,
     }
     const location = useLocation();
-    const pathname = location.pathname.replace('/','')
+    const pathname = decodeURIComponent(location.pathname.replace('/', ''));
     console.log(imagemTeste)
     return(
         <div>  
