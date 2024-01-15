@@ -151,7 +151,6 @@ img {
     flex-direction: column;
     margin-top: 20px;
     margin: 0 auto;
-    margin-left: -20px;
   }
 
   .img_left {
@@ -163,14 +162,13 @@ img {
 
   .img_center {
     margin-bottom: 5px;
-    border-radius: 30px;
+    border-radius: 20px;
     max-width: 70px;
     height: 75px;
   }
 
   .left-column{
     margin: 0 auto;
-    margin-left: 20px;
   }
 
   .container1 {
@@ -179,4 +177,10 @@ img {
     margin-bottom: 50px;
     width: 100%;
   }
+}
+
+.not_project{
+  height: 60vh;
+  padding-top: 300px;
+  text-align: center;
 }

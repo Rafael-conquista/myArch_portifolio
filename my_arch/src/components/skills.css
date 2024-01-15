@@ -1,0 +1,33 @@
+.skills_display{
+    flex-direction: row;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.skills_image_div{
+    background: #cdc6c342;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.skills_image{
+    border-radius: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:578px) {
+    .skills_image {
+        max-height: 40px;
+        max-width: 40px;
+    }
+    .skills_image_div{
+        padding: 4px;
+    }
+  }

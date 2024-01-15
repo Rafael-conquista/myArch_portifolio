@@ -2,11 +2,13 @@ import React from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../images/logo.jpeg'
 import perfil from '../images/perfil.jpeg'
+import logo_curriculo from '../images/logo_curriculo.png'
 import { useState } from 'react';
 import { CgMenuRight } from "react-icons/cg";
 import { IoIosClose } from "react-icons/io";
 import { GiFamilyHouse } from "react-icons/gi";
 import { IoNewspaperSharp } from "react-icons/io5";
+import { FaDraftingCompass } from "react-icons/fa";
 import './navbar.css'
 import { Row, Col } from 'react-bootstrap';
 import DownloadCurriculo from "../utils/download_curriculo";
@@ -63,7 +65,7 @@ function Navbar() {
                     <Row className='navbar_description' onClick={handleClose}>
                         <Col className='col-3'>
                             <a href="/#projeto">
-                                <GiFamilyHouse className='navbar_icon'/>
+                                <FaDraftingCompass className='navbar_icon'/>
                             </a>
                         </Col>
                         <Col className='navbar_text'>

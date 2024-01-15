@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
   width: 0.90vw;
+  background: linear-gradient(180deg, #dac6a8 0%, #e7d7c9 100%); 
 }
 
 /* Cor do fundo da scrollbar */
