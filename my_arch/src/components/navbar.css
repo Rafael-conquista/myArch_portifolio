@@ -38,6 +38,7 @@
     cursor: pointer;
     cursor: default;
     justify-content: center;
+    font-family: 'Abril Fatface';
 }
 
 .navbar{
@@ -80,6 +81,7 @@
     transition: 0.7s ease-in-out;
     font-size: 35px;
     cursor: pointer;
+    font-family: 'Abril Fatface';
 }
 
 .link_text:hover {
@@ -128,6 +130,7 @@
 
 .navbar_text{
     padding-top: 20px;
+    font-family: Arimo;
 }
 
 .navbar_icon{

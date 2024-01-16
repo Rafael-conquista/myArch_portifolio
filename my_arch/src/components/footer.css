@@ -22,6 +22,7 @@
 .footer span{
     width: 50vw;
     text-align: center;
+    font-family: Arimo
 }
 
 @media screen and (max-width:500px) {
@@ -125,11 +126,13 @@
     font-size: 3vw;
     font-weight: 100px;
     cursor: pointer;
+    font-family: 'Abril Fatface';
   }
 
   .icon_text{
     padding-left: 10px;
     cursor: pointer;
+    font-family: Arimo
   }
 
   .icons_content:hover{

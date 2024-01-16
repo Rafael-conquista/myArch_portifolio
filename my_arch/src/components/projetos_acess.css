@@ -11,6 +11,7 @@
     font-size: 30px;
     color: #443d39;
     user-select: none;
+    font-family: 'Abril Fatface';
 }
 
 .projects_menu_body{
@@ -36,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Abril Fatface';
 }
 
 .projects_button:hover{
