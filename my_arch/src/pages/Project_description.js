@@ -6,11 +6,16 @@ import ci1 from '../images/cozinha_integrada/ci1.jpeg'
 import ci2 from '../images/cozinha_integrada/ci2.jpeg';
 import ci3 from '../images/cozinha_integrada/ci3.jpeg';
 import ci4 from '../images/cozinha_integrada/ci4.jpeg';
+import autocad from '../images/autocad.png';
+import sketch from '../images/sketchup.png';
+import arch from '../images/arch.png';
+import vray from '../images/vray.png';
 import './project_description.css'
 import Footer from '../components/footer';
 
 function ProjectDescrition() {
     const cozinha_integrada = [ci1, ci2, ci3, ci4]
+    let habilidades = []
     let imagens = []
     let is_project_available = true
     const projetos = ['Cozinha integrada com área de serviço']
@@ -23,6 +28,7 @@ function ProjectDescrition() {
     if (projetos.includes(paths[1])) {
         if (paths[1] === projetos[0]) {
             imagens = cozinha_integrada
+            habilidades = [sketch, vray, autocad]
         }
     }else{
         is_project_available = false
@@ -49,7 +55,7 @@ function ProjectDescrition() {
             {is_project_available ? 
                 <div className='desc_body_effect'>
                     <div className='directory_title'>
-                        <span className='paths link_path' onClick={() => handleRedirect(paths[0])}>{paths[0]}/</span><span className='paths'>{paths[1]}</span>
+                        <span className='paths link_path' onClick={() => handleRedirect(paths[0])}>{paths[0]} /</span><span className='paths'> {paths[1].toLowerCase()}</span>
                     </div>
                     <div className="container1">
                         <div className="left-column">
@@ -70,6 +76,15 @@ function ProjectDescrition() {
                                 non, interdum ligula. Phasellus felis
                                 sapien, scelerisque sit amet convallis vel,
                                 eleifend quis velit.</p>
+                                <div className='skills_desc'>
+                                {habilidades.map((key) => {
+                                    return(
+                                        <div>
+                                            <img src={key} className='skills_image'/>
+                                        </div>
+                                    )
+                                })}
+                                </div>
                         </div>
                     </div>
                 </div>

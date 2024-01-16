@@ -5,7 +5,6 @@ import arch from '../images/arch.png';
 import vray from '../images/vray.png';
 
 function Skills() {
-    const habilidades = ['AutoCad', 'SketchUp', 'V-Ray', 'Archicad']
     return(
         <div className='skills_body'>
             <div className="project_button_menu">

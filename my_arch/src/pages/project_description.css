@@ -31,11 +31,13 @@
   margin: 0 auto;
   font-family: Arimo;
   text-align: center;
-}
-.right-column p {
   background-color: #cdc6c33d;
-  padding: 20px;
   border-radius: 30px;
+  padding-bottom: 20PX;
+}
+
+.right-column p {
+  padding: 20px;
 }
 
 .middle-column {
@@ -93,6 +95,11 @@ img {
 
 .desc_body_effect{
   animation: load 2s ease-in-out;
+}
+
+.skills_desc{
+  display: inline-flex;
+  justify-items: end;
 }
 
 @media screen and (max-width:1040px) {
@@ -191,6 +198,9 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
+  }
+  .right-column{
+    padding-right: 20px;
   }
 }
 

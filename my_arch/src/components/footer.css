@@ -35,6 +35,11 @@
     padding-left: 0;
 }
 
+.footer h1{
+    font-size: 30px;
+    color: #5e534e;
+}
+
 .footer,
 .menu {
     position: relative;

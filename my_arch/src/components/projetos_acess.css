@@ -9,9 +9,10 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: #5e534e;;
+    color: #5e534e;
     user-select: none;
     font-family: 'Abril Fatface';
+    font-size: 30px;
 }
 
 .projects_menu_body{

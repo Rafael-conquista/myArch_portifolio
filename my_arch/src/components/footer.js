@@ -11,7 +11,7 @@ function Footer() {
         <>
             <div className="body" id="contato">
                 <footer className="footer">
-                    <h1>Contato</h1>
+                    <h1>CONTATO</h1>
                     <span>
                         Sinta-se à vontade para entrar em contato comigo pelo Instagram ou através
                         do meu e-mail. Além disso, convido você a explorar minhas redes sociais
