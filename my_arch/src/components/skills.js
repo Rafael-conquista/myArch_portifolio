@@ -7,7 +7,7 @@ import vray from '../images/vray.png';
 function Skills() {
     const habilidades = ['AutoCad', 'SketchUp', 'V-Ray', 'Archicad']
     return(
-        <div>
+        <div className='skills_body'>
             <div className="project_button_menu">
                 HABILIDADES
             </div>

@@ -40,7 +40,7 @@ function Directory (){
         <div>  
             <Navbar/>
             {is_project_available ? 
-                <div>
+                <div className='dir_body'>
                 <div className='directory_title'>
                     <h1>{pathname.toUpperCase()}</h1>
                 </div>

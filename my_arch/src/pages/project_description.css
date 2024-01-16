@@ -77,8 +77,22 @@ img {
   opacity: 1; /* Opacidade total */
 }
 
+@keyframes load{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
 .desc_body {
   overflow-x: hidden;
+}
+
+.desc_body_effect{
+  animation: load 2s ease-in-out;
 }
 
 @media screen and (max-width:1040px) {

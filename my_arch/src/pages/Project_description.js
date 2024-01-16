@@ -47,7 +47,7 @@ function ProjectDescrition() {
         <div className='desc_body'>
             <Navbar />
             {is_project_available ? 
-                <div>
+                <div className='desc_body_effect'>
                     <div className='directory_title'>
                         <span className='paths link_path' onClick={() => handleRedirect(paths[0])}>{paths[0]}/</span><span className='paths'>{paths[1]}</span>
                     </div>

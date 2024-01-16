@@ -1,3 +1,23 @@
+.skills_body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: teste 1ms ease-in-out;
+    animation-timeline: scroll();
+    animation-range: cover 0% cover 50%;
+}
+
+@keyframes teste{
+    from{
+      opacity: 0;
+      translate: -10vw ;
+    }
+  
+    to{
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
 .skills_display{
     flex-direction: row;
     padding: 20px;
@@ -9,10 +29,47 @@
     padding-right: 10vw;
 }
 
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
 .skills_image_div{
     background: #cdc6c342;
     border-radius: 100px;
     padding: 8px;
+}
+
+.skills_image_div:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease infinite;
 }
 
 .skills_image{
