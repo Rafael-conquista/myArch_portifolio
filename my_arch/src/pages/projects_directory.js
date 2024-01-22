@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import './projects_directory.css'
 import slider1 from '../images/slider/slider1.jpeg';
+import b1 from '../images/banheiro1/b1_1.jpeg'
 import Footer from '../components/footer';
 
 function Directory (){
@@ -18,6 +19,9 @@ function Directory (){
     const cozinha_projects = {
         'Cozinha integrada com área de serviço': slider1,
     }
+    const banheiro_projects = {
+        'Estilo de banheiro 1': b1,
+    }
     
     let is_project_available = true
     let projects = []
@@ -27,6 +31,9 @@ function Directory (){
     if(projects_classes.includes(pathname)){
         if (pathname === 'cozinha'){
             projects = cozinha_projects
+        }
+        if(pathname === 'banho'){
+            projects = banheiro_projects
         }
     }else{
         is_project_available = false

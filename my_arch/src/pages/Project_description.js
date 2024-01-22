@@ -6,6 +6,10 @@ import ci1 from '../images/cozinha_integrada/ci1.jpeg'
 import ci2 from '../images/cozinha_integrada/ci2.jpeg';
 import ci3 from '../images/cozinha_integrada/ci3.jpeg';
 import ci4 from '../images/cozinha_integrada/ci4.jpeg';
+import b1_1 from '../images/banheiro1/b1_1.jpeg'
+import b1_2 from '../images/banheiro1/b1_2.jpeg'
+import b1_3 from '../images/banheiro1/b1_3.jpeg'
+import b1_4 from '../images/banheiro1/b1_4.jpeg'
 import autocad from '../images/autocad.png';
 import sketch from '../images/sketchup.png';
 import arch from '../images/arch.png';
@@ -15,22 +19,25 @@ import Footer from '../components/footer';
 
 function ProjectDescrition() {
     const cozinha_integrada = [ci1, ci2, ci3, ci4]
+    const banheiro1 = [b1_1, b1_2, b1_3, b1_4]
     let habilidades = []
     let imagens = []
     let is_project_available = true
-    const projetos = ['Cozinha integrada com área de serviço']
+    const projetos = {'Cozinha integrada com área de serviço': cozinha_integrada, 'Estilo de banheiro 1':banheiro1}
     const navigate = useNavigate();
     const location = useLocation();
     const pathname = decodeURIComponent(
         location.pathname.slice(1).split('/')
     );
     const paths = pathname.split(',');
-    if (projetos.includes(paths[1])) {
-        if (paths[1] === projetos[0]) {
-            imagens = cozinha_integrada
+    for (let chave in projetos){
+        if(paths[1] === chave){
+            imagens = projetos[chave]
             habilidades = [sketch, vray, autocad]
         }
-    }else{
+    }
+
+    if(imagens.lenght === 0){
         is_project_available = false
     }
     const [image, setImage] = useState(imagens[0])
